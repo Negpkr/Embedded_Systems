@@ -32,6 +32,7 @@ M_codes = {'a': '.-', 'b': '-...', 'c': '-.-.', 'd': '-..', 'e': '.', 'f': '..-.
 def choose_m(input_m):
     print("The word: ")
     print (input_m)
+    print("Letters: ")
     for letter in input_m:
         print(letter)
         if letter.lower() in M_codes:
@@ -39,7 +40,7 @@ def choose_m(input_m):
             for status in morse_map:
                 if status == '.':
                     dot()
-                elif status == '_':
+                else:
                     dash()
         time.sleep(2)
      
